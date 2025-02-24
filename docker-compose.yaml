@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    container_name: local-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: psql-db
+    volumes:
+      - /home/dwiki/GolandProjects/fastcampus/container/postgres:/var/lib/postgresql/data
