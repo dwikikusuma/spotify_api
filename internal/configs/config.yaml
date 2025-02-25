@@ -1,5 +1,5 @@
 service:
-  port: 9999
+  port: ":8787"
 
 database:
-  dataSourceName: "postgres://admin:root@localhost:5432/psql-db?ssl_mode=disabled"
+  dataSourceName: "postgres://admin:root@localhost:5432/psql-db?sslmode=disable"
